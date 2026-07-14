@@ -29,16 +29,45 @@ for (let musica of playlist){
 
 //Etapa 2
 
+const playlistDetalhada = [ 
+    {   titulo:"Asa Branca",
+        artista:"Luiz Gonzaga",
+        duracao:"5:40",
+        curtida:false,
+    },
+    {   titulo:"Telefone Sem Fio",
+        artista:"Mari Fernandez",
+        duracao:"02:48",
+        curtida:true},
 
-let playlist ={
-    titulo:"",
-    artista:"",
-    duracao:"",
-    curtida:""
-};
+        {titulo:"Saudade Estranha",
+        artista:"Murilo Huff",
+        duracao:"03:02",
+        curtida:false},
 
+        {titulo:"Eu Te Seguro",
+        artista:"Panda",
+        duracao:"02:37",
+        curtida:true},
 
-// kjaçslkdfjçslakdjf
+        {titulo:"Cadeira Cativa",
+        artista:"Zé Neto & Cristiano",
+        duracao:"03:06",
+        curtida:false
+}];
 
-
+for (const musica of playlistDetalhada){
+    if (musica.titulo === "Cadeira Cativa"){
+        console.log("Música encontrada!");
+    
+    }
+} 
+for (const musica of playlistDetalhada){
+    if (musica.curtida === true){
+        console.log(musica.titulo + " - " + musica.artista);} 
+}
+for (const musica of playlistDetalhada){
+if (musica.curtida === true){
+    console.log(`Total de músicas curtidas: ${playlistDetalhada.filter(musica => musica.curtida === true).length}`);}
+}
 
